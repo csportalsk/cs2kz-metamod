@@ -20,19 +20,19 @@
 #define KZ_DEFAULT_MODE         "Classic"
 
 class KZPlayer;
-// class Jump;
+/*class Jump;*/
 class KZAnticheatService;
-//class KZCheckpointService;
+/*class KZCheckpointService;*/
 class KZGlobalService;
-//class KZHUDService;
-//class KZJumpstatsService;
+/*class KZHUDService;
+class KZJumpstatsService;*/
 class KZMeasureService;
 class KZModeService;
-//class KZNoclipService;
+/*class KZNoclipService;*/
 class KZOptionService;
 class KZQuietService;
 class KZRacingService;
-//class KZSavelocService;
+/*class KZSavelocService;*/
 class KZSpecService;
 class KZStyleService;
 class KZTimerService;
