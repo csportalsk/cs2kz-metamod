@@ -22,17 +22,17 @@
 class KZPlayer;
 // class Jump;
 class KZAnticheatService;
-class KZCheckpointService;
+//class KZCheckpointService;
 class KZGlobalService;
-class KZHUDService;
-class KZJumpstatsService;
+//class KZHUDService;
+//class KZJumpstatsService;
 class KZMeasureService;
 class KZModeService;
-class KZNoclipService;
+//class KZNoclipService;
 class KZOptionService;
 class KZQuietService;
 class KZRacingService;
-class KZSavelocService;
+//class KZSavelocService;
 class KZSpecService;
 class KZStyleService;
 class KZTimerService;
@@ -132,17 +132,17 @@ private:
 
 public:
 	KZAnticheatService *anticheatService {};
-	KZCheckpointService *checkpointService {};
+	//KZCheckpointService *checkpointService {};
 	KZGlobalService *globalService {};
-	KZHUDService *hudService {};
-	KZJumpstatsService *jumpstatsService {};
+	//KZHUDService *hudService {};
+	//KZJumpstatsService *jumpstatsService {};
 	KZMeasureService *measureService {};
 	KZModeService *modeService {};
-	KZNoclipService *noclipService {};
+	//KZNoclipService *noclipService {};
 	KZOptionService *optionService {};
 	KZQuietService *quietService {};
 	KZRacingService *racingService {};
-	KZSavelocService *savelocService {};
+	//KZSavelocService *savelocService {};
 	KZSpecService *specService {};
 	KZStyleService *styleService {};
 	KZTimerService *timerService {};
@@ -223,7 +223,7 @@ namespace KZ
 {
 	namespace misc
 	{
-		void RegisterCommands();
+		//void RegisterCommands();
 		void OnClientActive(CPlayerSlot slot);
 		void JoinTeam(KZPlayer *player, int newTeam, bool restorePos = true);
 	} // namespace misc

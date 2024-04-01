@@ -70,9 +70,9 @@ class KZClassicModeService : public KZModeService
 		"false",     // slope_drop_enable
 		"6.5",       // sv_accelerate
 		"false",     // sv_accelerate_use_weapon_speed
-		"100",       // sv_airaccelerate
+		"150",       // sv_airaccelerate
 		"30",        // sv_air_max_wishspeed
-		"false",     // sv_autobunnyhopping
+		"true",     // sv_autobunnyhopping
 		"true",      // sv_enablebunnyhopping
 		"5.2",       // sv_friction
 		"800",       // sv_gravity
@@ -82,7 +82,7 @@ class KZClassicModeService : public KZModeService
 		"1",         // sv_ladder_dampen
 		"1",         // sv_ladder_scale_speed
 		"320",       // sv_maxspeed
-		"3500",      // sv_maxvelocity
+		"7200",      // sv_maxvelocity
 		"0",         // sv_staminajumpcost
 		"0",         // sv_staminalandcost
 		"0",         // sv_staminamax
