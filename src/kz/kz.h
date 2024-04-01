@@ -132,17 +132,17 @@ private:
 
 public:
 	KZAnticheatService *anticheatService {};
-	//KZCheckpointService *checkpointService {};
+	/*KZCheckpointService *checkpointService {};*/
 	KZGlobalService *globalService {};
-	//KZHUDService *hudService {};
-	//KZJumpstatsService *jumpstatsService {};
+	/*KZHUDService *hudService {};
+	KZJumpstatsService *jumpstatsService {};*/
 	KZMeasureService *measureService {};
 	KZModeService *modeService {};
-	//KZNoclipService *noclipService {};
+	/*KZNoclipService *noclipService {};*/
 	KZOptionService *optionService {};
 	KZQuietService *quietService {};
 	KZRacingService *racingService {};
-	//KZSavelocService *savelocService {};
+	/*KZSavelocService *savelocService {};*/
 	KZSpecService *specService {};
 	KZStyleService *styleService {};
 	KZTimerService *timerService {};
