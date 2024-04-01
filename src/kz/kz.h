@@ -223,7 +223,7 @@ namespace KZ
 {
 	namespace misc
 	{
-		//void RegisterCommands();
+		// void RegisterCommands();
 		void OnClientActive(CPlayerSlot slot);
 		void JoinTeam(KZPlayer *player, int newTeam, bool restorePos = true);
 	} // namespace misc

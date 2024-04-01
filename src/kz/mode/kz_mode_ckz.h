@@ -66,13 +66,15 @@ class KZClassicModeService : public KZModeService
 		{217.0f, 270.0f, 275.0f, 280.0f, 285.0f, 290.0f}, // JB
 	};
 
+	// clang-format off
+
 	const char *modeCvarValues[KZ::mode::numCvar] = {
 		"false",     // slope_drop_enable
 		"6.5",       // sv_accelerate
 		"false",     // sv_accelerate_use_weapon_speed
 		"150",       // sv_airaccelerate
 		"30",        // sv_air_max_wishspeed
-		"true",     // sv_autobunnyhopping
+		"true",      // sv_autobunnyhopping
 		"true",      // sv_enablebunnyhopping
 		"5.2",       // sv_friction
 		"800",       // sv_gravity
@@ -94,6 +96,8 @@ class KZClassicModeService : public KZModeService
 		"1",         // sv_waterfriction
 		"0.9"        // sv_water_slow_amount
 	};
+
+	// clang-format on
 
 	bool revertJumpTweak {};
 	f32 preJumpZSpeed {};
