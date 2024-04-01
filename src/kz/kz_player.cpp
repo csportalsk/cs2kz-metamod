@@ -1,17 +1,17 @@
 #include "kz.h"
 #include "utils/utils.h"
 
-//#include "checkpoint/kz_checkpoint.h"
+// #include "checkpoint/kz_checkpoint.h"
 #include "quiet/kz_quiet.h"
-//#include "jumpstats/kz_jumpstats.h"
-//#include "hud/kz_hud.h"
+// #include "jumpstats/kz_jumpstats.h"
+// #include "hud/kz_hud.h"
 #include "mode/kz_mode.h"
-//#include "noclip/kz_noclip.h"
-//#include "tip/kz_tip.h"
-//#include "noclip/kz_noclip.h"
+// #include "noclip/kz_noclip.h"
+// #include "tip/kz_tip.h"
+// #include "noclip/kz_noclip.h"
 #include "style/kz_style.h"
-//#include "spec/kz_spec.h"
-//#include "timer/kz_timer.h"
+// #include "spec/kz_spec.h"
+// #include "timer/kz_timer.h"
 #include "option/kz_option.h"
 
 #include "tier0/memdbgon.h"
@@ -403,33 +403,33 @@ void KZPlayer::OnPostThinkPost()
 
 void KZPlayer::OnStartTouchGround()
 {
-	//this->jumpstatsService->EndJump();
-	//this->timerService->OnStartTouchGround();
+	/*this->jumpstatsService->EndJump();
+	this->timerService->OnStartTouchGround();*/
 	this->modeService->OnStartTouchGround();
 	this->styleService->OnStartTouchGround();
 }
 
 void KZPlayer::OnStopTouchGround()
 {
-	//this->jumpstatsService->AddJump();
-	//this->timerService->OnStopTouchGround();
+	/*this->jumpstatsService->AddJump();
+	this->timerService->OnStopTouchGround();*/
 	this->modeService->OnStopTouchGround();
 	this->styleService->OnStopTouchGround();
 }
 
 void KZPlayer::OnChangeMoveType(MoveType_t oldMoveType)
 {
-	//this->jumpstatsService->OnChangeMoveType(oldMoveType);
-	//this->timerService->OnChangeMoveType(oldMoveType);
+	/*this->jumpstatsService->OnChangeMoveType(oldMoveType);
+	this->timerService->OnChangeMoveType(oldMoveType);*/
 	this->modeService->OnChangeMoveType(oldMoveType);
 	this->styleService->OnChangeMoveType(oldMoveType);
 }
 
 void KZPlayer::OnTeleport(const Vector *origin, const QAngle *angles, const Vector *velocity)
 {
-	//this->jumpstatsService->InvalidateJumpstats("Teleported");
+	// this->jumpstatsService->InvalidateJumpstats("Teleported");
 	this->modeService->OnTeleport(origin, angles, velocity);
-	//this->timerService->OnTeleport(origin, angles, velocity);
+	// this->timerService->OnTeleport(origin, angles, velocity);
 }
 
 void KZPlayer::EnableGodMode()
@@ -447,8 +447,8 @@ void KZPlayer::EnableGodMode()
 
 void KZPlayer::StartZoneStartTouch()
 {
-	//this->checkpointService->ResetCheckpoints();
-	//this->timerService->StartZoneStartTouch();
+	// this->checkpointService->ResetCheckpoints();
+	// this->timerService->StartZoneStartTouch();
 }
 
 void KZPlayer::StartZoneEndTouch()
@@ -463,7 +463,7 @@ void KZPlayer::StartZoneEndTouch()
 void KZPlayer::EndZoneStartTouch()
 {
 	// TODO: get course name
-	//this->timerService->TimerEnd("");
+	// this->timerService->TimerEnd("");
 }
 
 void KZPlayer::UpdatePlayerModelAlpha()
