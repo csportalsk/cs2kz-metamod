@@ -53,11 +53,11 @@ void KZPlayer::Reset()
 	// TODO: reset every service.
 	this->checkpointService->Reset();
 	// this->noclipService->Reset();
-	this->quietService->Reset();*/
+	// this->quietService->Reset();
 	this->jumpstatsService->Reset();
 	// this->hudService->Reset();
 	// this->timerService->Reset();
-	// this->tipService->Reset();*/
+	// this->tipService->Reset();
 	this->modeService->Reset();
 	this->optionService->Reset();
 
