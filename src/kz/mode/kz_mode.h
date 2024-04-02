@@ -1,6 +1,6 @@
 #pragma once
 #include "../kz.h"
-// #include "../jumpstats/kz_jumpstats.h"
+#include "../jumpstats/kz_jumpstats.h"
 #include "UtlStringMap.h"
 
 #define KZ_MODE_MANAGER_INTERFACE "KZModeManagerInterface"

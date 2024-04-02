@@ -3,7 +3,7 @@
 
 // #include "checkpoint/kz_checkpoint.h"
 #include "quiet/kz_quiet.h"
-// #include "jumpstats/kz_jumpstats.h"
+#include "jumpstats/kz_jumpstats.h"
 // #include "hud/kz_hud.h"
 #include "mode/kz_mode.h"
 // #include "noclip/kz_noclip.h"
@@ -103,8 +103,8 @@ void KZPlayer::OnProcessMovement()
 	KZ::mode::ApplyModeSettings(this);
 	this->modeService->OnProcessMovement();
 	this->styleService->OnProcessMovement();
-	/*this->jumpstatsService->OnProcessMovement();
-	this->checkpointService->TpHoldPlayerStill();
+	this->jumpstatsService->OnProcessMovement();
+	/*this->checkpointService->TpHoldPlayerStill();
 	this->noclipService->HandleMoveCollision();*/
 	this->EnableGodMode();
 	this->UpdatePlayerModelAlpha();
@@ -112,11 +112,11 @@ void KZPlayer::OnProcessMovement()
 
 void KZPlayer::OnProcessMovementPost()
 {
-	/*this->hudService->DrawSpeedPanel();
-	this->jumpstatsService->UpdateJump();*/
+	/*this->hudService->DrawSpeedPanel();*/
+	this->jumpstatsService->UpdateJump();
 	this->modeService->OnProcessMovementPost();
 	this->styleService->OnProcessMovementPost();
-	/*this->jumpstatsService->OnProcessMovementPost();*/
+	this->jumpstatsService->OnProcessMovementPost();
 	MovementPlayer::OnProcessMovementPost();
 }
 
@@ -403,31 +403,31 @@ void KZPlayer::OnPostThinkPost()
 
 void KZPlayer::OnStartTouchGround()
 {
-	/*this->jumpstatsService->EndJump();
-	this->timerService->OnStartTouchGround();*/
+	this->jumpstatsService->EndJump();
+	/*this->timerService->OnStartTouchGround();*/
 	this->modeService->OnStartTouchGround();
 	this->styleService->OnStartTouchGround();
 }
 
 void KZPlayer::OnStopTouchGround()
 {
-	/*this->jumpstatsService->AddJump();
-	this->timerService->OnStopTouchGround();*/
+	this->jumpstatsService->AddJump();
+	/*this->timerService->OnStopTouchGround();*/
 	this->modeService->OnStopTouchGround();
 	this->styleService->OnStopTouchGround();
 }
 
 void KZPlayer::OnChangeMoveType(MoveType_t oldMoveType)
 {
-	/*this->jumpstatsService->OnChangeMoveType(oldMoveType);
-	this->timerService->OnChangeMoveType(oldMoveType);*/
+	this->jumpstatsService->OnChangeMoveType(oldMoveType);
+	/*this->timerService->OnChangeMoveType(oldMoveType);*/
 	this->modeService->OnChangeMoveType(oldMoveType);
 	this->styleService->OnChangeMoveType(oldMoveType);
 }
 
 void KZPlayer::OnTeleport(const Vector *origin, const QAngle *angles, const Vector *velocity)
 {
-	// this->jumpstatsService->InvalidateJumpstats("Teleported");
+	this->jumpstatsService->InvalidateJumpstats("Teleported");
 	this->modeService->OnTeleport(origin, angles, velocity);
 	// this->timerService->OnTeleport(origin, angles, velocity);
 }

@@ -134,8 +134,8 @@ public:
 	KZAnticheatService *anticheatService {};
 	/*KZCheckpointService *checkpointService {};*/
 	KZGlobalService *globalService {};
-	/*KZHUDService *hudService {};
-	KZJumpstatsService *jumpstatsService {};*/
+	/*KZHUDService *hudService {};*/
+	KZJumpstatsService *jumpstatsService {};
 	KZMeasureService *measureService {};
 	KZModeService *modeService {};
 	/*KZNoclipService *noclipService {};*/
