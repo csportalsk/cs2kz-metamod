@@ -116,9 +116,9 @@ bool KZTimerService::TimerEnd(const char *courseName)
 
 	this->timerRunning = false;
 	this->lastEndTime = g_pKZUtils->GetServerGlobals()->curtime;
-	this->PlayTimerEndSound();
+	// this->PlayTimerEndSound();
 
-	if (!this->player->GetPawn()->IsBot())
+	/*if (!this->player->GetPawn()->IsBot())
 	{
 		bool showMessage = true;
 		FOR_EACH_VEC(eventListeners, i)
@@ -134,7 +134,7 @@ bool KZTimerService::TimerEnd(const char *courseName)
 	FOR_EACH_VEC(eventListeners, i)
 	{
 		eventListeners[i]->OnTimerEndPost(this->player, courseName, time, teleportsUsed);
-	}
+	}*/
 
 	return true;
 }
