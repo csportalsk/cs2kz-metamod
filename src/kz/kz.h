@@ -148,7 +148,7 @@ public:
 	KZTimerService *timerService {};
 	KZTipService *tipService {};
 
-	void EnableGodMode();
+	// void EnableGodMode();
 
 	// Leg stuff
 	void ToggleHideLegs();

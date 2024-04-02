@@ -31,9 +31,9 @@ void KZPlayer::Init()
 	delete this->noclipService;
 	delete this->tipService;
 
-	/*this->checkpointService = new KZCheckpointService(this);
+	// this->checkpointService = new KZCheckpointService(this);
 	this->jumpstatsService = new KZJumpstatsService(this);
-	this->noclipService = new KZNoclipService(this);*/
+	// this->noclipService = new KZNoclipService(this);
 	this->quietService = new KZQuietService(this);
 	/*this->hudService = new KZHUDService(this);
 	this->specService = new KZSpecService(this);
@@ -51,13 +51,13 @@ void KZPlayer::Reset()
 	this->previousTurnState = TURN_NONE;
 
 	// TODO: reset every service.
-	/*this->checkpointService->Reset();
-	this->noclipService->Reset();
-	this->quietService->Reset();
+	this->checkpointService->Reset();
+	// this->noclipService->Reset();
+	this->quietService->Reset();*/
 	this->jumpstatsService->Reset();
-	this->hudService->Reset();
-	this->timerService->Reset();
-	this->tipService->Reset();*/
+	// this->hudService->Reset();
+	// this->timerService->Reset();
+	// this->tipService->Reset();*/
 	this->modeService->Reset();
 	this->optionService->Reset();
 
@@ -106,7 +106,7 @@ void KZPlayer::OnProcessMovement()
 	this->jumpstatsService->OnProcessMovement();
 	/*this->checkpointService->TpHoldPlayerStill();
 	this->noclipService->HandleMoveCollision();*/
-	this->EnableGodMode();
+	// this->EnableGodMode();
 	this->UpdatePlayerModelAlpha();
 }
 
@@ -432,7 +432,7 @@ void KZPlayer::OnTeleport(const Vector *origin, const QAngle *angles, const Vect
 	// this->timerService->OnTeleport(origin, angles, velocity);
 }
 
-void KZPlayer::EnableGodMode()
+/*void KZPlayer::EnableGodMode()
 {
 	CCSPlayerPawn *pawn = this->GetPawn();
 	if (!pawn)
@@ -443,7 +443,7 @@ void KZPlayer::EnableGodMode()
 	{
 		pawn->m_bTakesDamage(false);
 	}
-}
+}*/
 
 void KZPlayer::StartZoneStartTouch()
 {
@@ -455,8 +455,8 @@ void KZPlayer::StartZoneEndTouch()
 {
 	if (!this->noclipService->IsNoclipping())
 	{
-		this->checkpointService->ResetCheckpoints();
-		this->timerService->StartZoneEndTouch();
+		// this->checkpointService->ResetCheckpoints();
+		// this->timerService->StartZoneEndTouch();
 	}
 }
 

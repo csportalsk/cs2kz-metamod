@@ -120,7 +120,7 @@ public:
 
 	TimeType_t GetCurrentTimeType()
 	{
-		return this->player->checkpointService->GetTeleportCount() > 0 ? TimeType_Standard : TimeType_Pro;
+		// return this->player->checkpointService->GetTeleportCount() > 0 ? TimeType_Standard : TimeType_Pro;
 	}
 
 	void StartZoneStartTouch();

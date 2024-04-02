@@ -1,7 +1,7 @@
 #include "kz_timer.h"
 #include "../mode/kz_mode.h"
 #include "../style/kz_style.h"
-#include "../noclip/kz_noclip.h"
+// #include "../noclip/kz_noclip.h"
 #include "utils/utils.h"
 #include "utils/simplecmds.h"
 
