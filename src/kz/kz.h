@@ -24,8 +24,8 @@ class KZPlayer;
 class KZAnticheatService;
 /*class KZCheckpointService;*/
 class KZGlobalService;
-/*class KZHUDService;
-class KZJumpstatsService;*/
+/*class KZHUDService;*/
+class KZJumpstatsService;
 class KZMeasureService;
 class KZModeService;
 /*class KZNoclipService;*/
